@@ -1,0 +1,25 @@
+--Create a Grocery store database
+
+CREATE TABLE Store (id INTEGER PRIMARY KEY, item TEXT, section TEXT, price INTEGER, popularity INTEGER);
+
+INSERT INTO Store VALUES (1, "Bananas", "Produce", 3.99, 75);
+INSERT INTO Store VALUES (2, "Almonds", "Bulk", 6.79, 65);
+INSERT INTO Store VALUES (3, "Oat Milk", "Dairy", 5.99, 79);
+INSERT INTO Store Values (4, "Sorbet", "Frozen", 4.59, 80);
+INSERT INTO Store VALUES (5, "Turkey", "Deli", 2.99, 59);
+INSERT INTO Store VALUES (6, "Chicken Nuggets", "Meat", 14.19, 48); 
+INSERT INTO Store VALUES (7, "Avocado", "Produce", 3.99, 90);
+INSERT INTO Store VALUES (8, "Bread", "Bakery", 4.19, 85);
+INSERT INTO Store VALUES (9, "Chips", "Snacks", 5.29, 67);
+INSERT INTO Store VALUES (10, "Salsa", "Snacks", 3.59, 43); 
+INSERT INTO Store VALUES (11, "Toothpaste", "Hygiene", 1.99, 75);
+INSERT INTO Store VALUES (12, "Cheese", "Deli", 3.49, 80);
+INSERT INTO Store VALUES (13, "Lettuce", "Produce", 1.99, 23);
+INSERT INTO Store VALUES (14, "Pizza", "Frozen", 8.29, 81);
+INSERT INTO Store VALUES (15, "Donuts", "Snacks", 2.19, 65); 
+
+--display the database ordered by price. 
+SELECT * FROM Store ORDER BY Price;
+
+--what are the most popular items? 
+SELECT * FROM Store WHERE popularity >=70 ORDER BY popularity;
